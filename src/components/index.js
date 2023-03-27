@@ -31,15 +31,12 @@ const Counter = () => {
   };
   const decrementHandler = () => {
     dispatch(counterActions.decrement());
-    // dispatch({ type: "decrement" });
   };
   const increaseHandler = () => {
     dispatch(counterActions.increase(5));
-    // dispatch({ type: "increase", amount: 5 });
   };
   const toggleHandler = () => {
     dispatch(counterActions.toggle());
-    // dispatch({ type: "toggle" });
   };
   const autheticateUser = () => {
     dispatch(authActions.login());
@@ -47,8 +44,6 @@ const Counter = () => {
   const removeAuthentication = () => {
     dispatch(authActions.logout());
   };
-
-  console.log("isAuth", isAuth);
 
   return (
     <main>
