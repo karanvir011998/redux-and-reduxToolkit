@@ -16,7 +16,6 @@ const ReduxDemoExample = () => {
 
   const counterSub = () => {
     const updatedCounter = store.getState();
-    console.log("updatedCounter", updatedCounter);
   };
   store.getState();
   store.dispatch({ type: "increment" });
